@@ -1,5 +1,7 @@
 # node files
-dist
+# NOTE: dist/ is INTENTIONALLY NOT gitignored. Capacitor plugins consumed via
+# git URL (OutSystems MABS / CocoaPods) require the built dist/ folder to be
+# committed — without it, registerPlugin() never executes at runtime.
 node_modules
 
 # iOS files
